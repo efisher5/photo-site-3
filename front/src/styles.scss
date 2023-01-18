@@ -1,0 +1,60 @@
+// Colors
+$background-color: white;
+$highlight-color: #586f21;
+$accent-color: #7dafac;
+$grey: #9e9a9c;
+
+body {
+    min-height: 100vh;
+    padding-bottom: 25px;
+}
+
+.text, label {
+    font-family: 'Trebuchet MS', sans-serif;
+}
+
+.divider {
+    border: 1px solid $highlight-color;
+    width: 50%;
+    position: relative;
+    left: 25%;
+    opacity: 1;
+}
+
+.bulleted-li::marker {
+    color: $highlight-color;
+    content: "►  ";
+}
+
+.header-text {
+    color: $highlight-color;
+}
+
+.gear-text {
+    text-align: center;
+}
+
+a:hover {
+    color: $accent-color;
+}
+
+.page-container {
+    -webkit-animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    animation: fadein 2s;
+}
+
+@keyframes fadein {
+    from {opacity: 0}
+    to   {opacity: 1}
+}
+
+@-webkit-keyframes fadein {
+    from {opacity: 0}
+    to  {opacity: 1};
+}
+
+@-moz-keyframes fadein {
+    from {opacity: 0}
+    to {opacity: 1}
+}
